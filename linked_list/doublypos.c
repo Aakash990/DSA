@@ -99,8 +99,8 @@ temp=temp->next;
 }
 int main(){
 int n,ele;
+    printf("\n***Doubly linked list***\n");
     for(;;){
-        printf("\n***Single linked list**\n");
         printf("\n1.Insert\t2.Delete\t3.display\t4.Exit\n");
         printf("Enter your choice:");
         scanf("%d",&n);
