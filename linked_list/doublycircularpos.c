@@ -94,8 +94,8 @@ printf("%d",temp->info);
 
 void main(){
     int n,ele;
+    printf("\n***Doubly Circular Linked List***\n");
     for(;;){
-        printf("\n***Single linked list**\n");
         printf("\n1.Insert\t2.Delete\t3.display\t4.Exit\n");
         printf("Enter your choice:");
         scanf("%d",&n);
