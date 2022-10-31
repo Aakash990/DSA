@@ -30,16 +30,18 @@ void del(){
         printf("EMpty list");
     }
 else{
-temp=head;
-head=head->next;
-head->prev=tail;
-tail->next=head;
-if(head==tail){
-    head=NULL;
-    tail=NULL;
-}
-printf("The deleted item is %d",temp->info);
-free(temp);
+    if(head==tail){
+        printf("THe deleted item is %d\n",head->info);
+        head=NULL;
+        tail==NULL;
+    }else{
+        temp=head;
+        head=head->next;
+        head->prev=tail;
+        tail->next=head;
+        printf("The deleted item is %d",temp->info);
+        free(temp);
+    }
 }}
 
 void display(){
@@ -58,8 +60,8 @@ printf("%d",temp->info);
 
 void main(){
     int n,ele;
-    for(;;){
-        printf("\n***Single linked list**\n");
+    printf("\n***Doubly Circular linked list**\n");
+    for(;;){   
         printf("\n1.Insert\t2.Delete\t3.display\t4.Exit\n");
         printf("Enter your choice:");
         scanf("%d",&n);
