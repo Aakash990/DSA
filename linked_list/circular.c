@@ -160,8 +160,8 @@ printf("%d",temp->data);
 }
 void main(){
 int n,ele;
+    printf("\n***Singly Circular Linked List***\n");
     for(;;){
-        printf("\n***Single linked list**\n");
         printf("\n1.Insert_at_beg\t2.insert_at_end\t3.insert at pos\t4.display\t5.delete_at_beg\t6.delete_at_endd\t7.delete_at_pos\t8.Exit\n");
         printf("Enter your choice:");
         scanf("%d",&n);
